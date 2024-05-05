@@ -35,7 +35,7 @@ inputForm.addEventListener("submit", (e) => {
   const id = Date.now();
 
 
-  const userInput = [{ name: name.value, age: age.value, level: level.value, id}];
+  const userInput = [{ name: name.value.trim(), age: age.value.trim(), level: level.value.trim(), id}];
 
   //Retrieve values from local storage
   let storedInputs = getData();
