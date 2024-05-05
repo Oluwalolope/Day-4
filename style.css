@@ -1,0 +1,71 @@
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    width: min(100% - 2rem, 800px);
+    margin-inline: auto;
+    grid-template-rows: auto 1fr auto auto;
+}
+
+label {
+    display: block;
+}
+
+input {
+    width: 90%;
+    margin-bottom: 1rem;
+    padding: .5rem 1rem;
+}
+
+.output {
+    min-height: 1.5rem;
+    width: 90%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: .5rem 1rem;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+    min-width: 2rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    background-color: rgba(128, 128, 128, 0.3);
+    list-style: none;
+}
+
+.recent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+}
+
+.delete {
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+    opacity: 0.4;
+    transition: all ease-in-out 500ms;
+}
+.delete:is(:focus-visible, :hover) {
+    cursor: pointer;
+    opacity: 1;
+}
+
+footer {
+    text-align: center;
+}

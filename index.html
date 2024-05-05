@@ -4,15 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- script -->
+    <script defer src="index.js"></script>
+    
     <title>Day 4</title>
-    <script src="index.js"></script>
 </head>
 <body>
-    <h1>ECX 4.0</h1>
-    <h2>Day 4</h2>
-    <h3>The Challenge</h3>
-    <p>Create a function that takes in an array of objects containing properties: <br> name, age, and level. It should return an array of strings where each string is a concatenation of all values contained in the object seperated by a slash</p>
-
-    <div>Solution by <a href="http://github.com/Oluwalolope" target="_blank">Oluwalolope</a></div>
+    <div class="container">
+        <header>
+            <h1>ECX 4.0</h1>
+            <h2>Day 4</h2>
+            <h3>The Challenge</h3>
+            <p>Create a function that takes in an array of objects containing properties: name, age, and level. It should return an array of strings where each string is a concatenation of all values contained in the object seperated by a slash</p>
+        </header>
+        <main>
+            <!-- input field -->
+            <form class="inputs">
+                <!-- name field-->
+                <label for="name">Name</label>
+                <input type="text" name="name">
+                <!-- age field-->
+                <label for="age">Age</label>
+                <input type="number" name="age">
+                <!-- level field-->
+                <label for="level">Level</label>
+                <input type="text" name="level">
+                <!-- submit button -->
+                <input type="submit" value="Done">
+            </form>
+            <!-- output field -->
+            <p>Output:</p>
+            <div class="output"></div>
+        </main>
+        <section>
+            <h4>Recents:</h4>
+            <ul class="recent">
+                <li>
+                    <span>
+                        lope/20/100
+                    </span>
+        
+                    <div class="delete">X</div>
+                </li>
+                <li>
+                    <span>
+                        ijachi/22/300
+                    </span>
+        
+                    <div class="delete">X</div>
+                </li>
+                <li>
+                    <span>
+                        ijachi/22/300
+                    </span>
+        
+                    <div class="delete">X</div>
+                </li>
+                <li>
+                    <span>
+                        ijachi/22/300
+                    </span>
+        
+                    <div class="delete">X</div>
+                </li>
+                <li>
+                    <span>
+                        ijachi/22/300
+                    </span>
+        
+                    <div class="delete">X</div>
+                </li>
+                <li>
+                    <span>
+                        ijachi/22/300
+                    </span>
+        
+                    <div class="delete">X</div>
+                </li>
+                <li>
+                    <span>
+                        ijachi/22/300
+                    </span>
+        
+                    <div class="delete">X</div>
+                </li>
+            </ul>
+        </section>
+        <footer>
+            <div>Solution by <a href="https://github.com/Oluwalolope" target="_blank">Oluwalolope</a></div>
+        </footer>
+    </div>
 </body>
 </html>
